@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>WeChoice</title>
+    <style>
+		/**{
+			margin: 0;
+			padding: 0;
+		}*/
+		ul{
+			margin: 0;
+			padding: 0;
+		}
+		#picture{
+			min-height:331px;
+			height: 100%;
+			overflow: hidden;
+			background: url("img/bg4.jpg") no-repeat;
+			background-size: 100% 100%;
+		}
+		#function{
+			min-height:336px;
+			height: 100%;
+			overflow: hidden;
+			background:#F5F5F5;
+		}
+		#function .list{
+			list-style: none;
+		}
+		#function .list li{
+			cursor: pointer;
+			height: 50px;
+			font-size: 20px;
+			text-indent: 73px;
+			letter-spacing: 2px;
+			line-height: 50px;
+			margin-top: 10px;
+			border-bottom: 1px solid #ccc;
+			background: #fff;
+		}
+		
+		#function .list .test{
+			background: #fff url("img/persons.jpg") no-repeat 5px center;
+			background-size: 50px;
+			margin-top: 20px;
+		}
+		#function .list .analyse{
+			background: #fff url("img/analyses.jpg") no-repeat 5px center;
+			background-size: 50px;
+		}
+		#function .list .core{
+			background: #fff url("img/math.jpg") no-repeat 5px center;
+			background-size: 50px;
+		}
+		#function .list .about{
+			background: #fff url("img/chitu.png") no-repeat 5px center;
+			background-size: 50px;
+			line-height: 59px;
+		}
+  </style>
+    <script type="text/javascript">
+    	
+   		document.addEventListener('plusready', function(){
+   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+   			var test=document.getElementById("test");
+   			test.onclick=function(){
+   				var page1=plus.webview.create("begin.html");
+   				page1.show();
+   			}
+   			var analyse=document.getElementById("analyse");
+   			analyse.onclick=function(){
+   				var page2=plus.webview.create("analyse.html");
+   				page2.show();
+// 				location.href="analyse.html";
+   			}
+   			var core=document.getElementById("core");
+   			core.onclick=function(){
+   				var page3=plus.webview.create("core.html");
+   				page3.show();
+// 				location.href="core.html";
+   			}
+   			var about=document.getElementById("about");
+   			about.onclick=function(){
+ 				var page4=plus.webview.create("about.html");
+   				page4.show();
+   			}
+   			
+
+		});
+   			
+   	
+   		
+    </script>
+</head>
+<body>
+	<div id="picture">	
+	</div>
+	<div id="function">
+		<ul class="list">
+			<li class="test" id="test">性格职业测试</li>
+			<li class="analyse" id="analyse">性格分析</li>
+			<li class="core" id="core">关于霍兰德算法</li>
+			<li class="about" id="about">关于我们</li>
+		</ul>
+	</div>
+	
+</body>
+</html>

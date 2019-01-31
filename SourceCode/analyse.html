@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta name="description" content="">
+	    <meta name="author" content="">
+		<title>性格分析</title>
+		<style>
+			/**{
+				margin:0;
+				padding: 0;
+			}*/
+			.box{
+				min-height: 110px;
+				border-bottom: 1px solid #ccc;
+			}
+			.R{
+				background: #800080;
+			}
+			.Rsp{
+				color: #ccc;
+				text-shadow:5px 5px 5px #999; 
+			}
+			.I{
+				background: #DEB887;
+			}
+			.Isp{
+				color:#00BFFF;
+				text-shadow: 5px 5px 5px #555;
+			}
+			.A{
+				background:#FF8C00;
+			}
+			.Asp{
+				color: gold;
+				text-shadow: 5px 5px 5px #333;
+				
+			}
+			.S{
+				background: moccasin;
+			}
+			.Ssp{
+				color: 	#CD853F;
+				text-shadow: 5px 5px 5px #999;
+			}
+			.E{
+				background: #FAFAD2;
+			}
+			.Esp{
+				color: 	purple;
+				text-shadow: 5px 5px 5px #999;
+			}
+			.C{
+				background: #ccc;
+			}
+			.Csp{
+				color:#556B2F;
+				text-shadow: 5px 5px 5px #999;
+			}
+			.Rcontent{
+				letter-spacing: 2px;
+				background: #fff;
+				font-size: 20px;
+				height: 400px;
+				background: url("images/bg4.jpg") no-repeat;
+				background-size: 100% 100%;
+				border-radius: 15px;
+				border: 1px solid #000;
+				display: none;
+			}
+			.Icontent{
+				letter-spacing: 2px;
+				background: #fff;
+				font-size: 20px;
+				height: 420px;
+				background: url("images/bg5.jpg") no-repeat;
+				background-size: 100% 100%;
+				border-radius: 15px;
+				border: 1px solid #000;
+				display: none;
+			}
+			.Acontent{
+				letter-spacing: 2px;
+				background: #fff;
+				font-size: 20px;
+				height: 400px;
+				background: url("images/bg10.jpg") no-repeat;
+				background-size: 100% 100%;
+				border: 1px solid #000;
+				border-radius: 15px;
+				display: none;
+			}
+			.Scontent{
+				letter-spacing: 2px;
+				background: #fff;
+				font-size: 20px;
+				height: 400px;
+				background: url("images/bg7.jpg") no-repeat;
+				background-size: 100% 100%;
+				border-radius: 15px;
+				border: 1px solid #000;
+				display: none;
+			}
+			.Econtent{
+				letter-spacing: 2px;
+				background: #fff;
+				font-size: 20px;
+				height: 430px;
+				background: url("images/bg8.jpg") no-repeat;
+				background-size: 100% 100%;
+				border-radius: 15px;
+				border: 1px solid #000;
+				display: none;
+			}
+			.Ccontent{
+				letter-spacing: 2px;
+				background: #fff;
+				font-size: 20px;
+				height: 400px;
+				background: url("images/bg9.jpg") no-repeat;
+				background-size: 100% 100%;
+				border: 1px solid #ccc;
+				border-radius: 15px;
+				display: none;
+			}
+			
+			span{
+				font-size: 45px;
+				display: block;
+				height: 85px;
+				text-shadow: 5px 5px 5px #000;
+				font-family: "微软雅黑";
+				margin:0 auto;
+				padding-top: 25px;
+				text-align: center;
+			}
+		</style>
+		<script type="text/javascript">
+			document.addEventListener('plusready', function(){
+   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+   			
+   			
+
+		});
+   			
+   	
+		</script>
+		<script src="js/public.js"></script>
+	</head>
+	<body>
+		<div class="R box">
+		<span class="Rsp">R---现实型</span>
+		<div class="Rcontent words">
+		<center>人格倾向:</center><br>
+		具有顺从、坦率、谦虚、自然、坚毅、实际、有礼、害羞、稳健、节俭的特征，表现为 :<br>
+		1、喜爱实用性的职业或情境，以从事所喜好的活动，避免社会性的职业或情境 。<br>
+		2、用具体实际的能力解决工作及其他方面的问题，较缺乏人际关系方面的能力 。<br>
+		3、重视具体的事物，如金钱，权力、地位等 。<br>
+		典型职业 : 工人 、农民 、土木工程师。
+		</div>
+	</div>
+	<div class="I box">
+		<span class="Isp">I---研究型</span>
+		<div class="Icontent words">
+		<center>人格倾向:</center><br>
+		具有分析、谨慎、批评、好奇、独立、聪明、内向、条理、谦逊、精确、理发、保守的特征，表现为 :<br><br>
+		1、喜爱研究性的职业或情境，避免企业性的职业或情境<br><br>
+		2、用研究的能力解决工作及其他方面的问题，即自觉、好学、自信，重视科学，但缺乏领导方面的才能<br><br>
+		典型职业 : 科研人员 、数学、生物方面的专家 。
+		</div>
+	</div>
+	<div class="A box">
+		<span class="Asp">A---艺术型</span>
+		<div class="Acontent words">
+		<center>人格倾向:</center><br>
+		具有复杂、想象、冲动、独立、直觉、无秩序、情绪化、理想化、不顺从、有创意、富有表情、不重实际的特征，表现为 : <br><br>
+		1、喜爱艺术性的职业或情境，避免传统性的职业或情境 <br><br>
+		2、富有表达能力和直觉、独立、具创意、不顺从（包括表演、写作、语言），并重视审美的领域<br> <br>
+		典型职业 : 诗人 、艺术家 。
+		</div>
+	</div>
+	<div class="S box">
+		<span class="Ssp">S---社会型</span>
+		<div class="Scontent words">
+		<center>人格倾向:</center><br>
+		具有合作、友善、慷慨、助人、仁慈、负责、圆滑、善社交、善解人意、说服他人、理想主义等特征，表现为 :<br>
+		1、喜爱社会型的职业或情境，避免实用性的职业或情境，并以社交方面的能力解决工作及其他方面的问题，但缺乏机械能力与科学能力<br>
+		2、喜欢帮助别人、了解别人，有教导别人的能力，且重视社会与伦理的活动与问题。<br>
+		典型职业 : 教师 、 牧师 、 辅导人员 。
+		</div>
+	</div>
+	<div class="E box">
+		<span class="Esp">E---企业型</span>
+		<div class="Econtent words">
+		<center>人格倾向:</center><br>
+		具有冒险、野心、独断、冲动、乐观、自信、追求享受、精力充沛、善于社交、获取注意、知名度等特征，表现为 :<br>
+		1、喜欢企业性质的的职业或环境，避免研究性质的职业或情境，会以企业方面的能力解决工作或其他方面的问题能力 。<br>
+		2、有冲动、自信、善社交、知名度高、有领导与语言能力，缺乏科学能力，但重视政治与经济上的成就。<br>
+		典型职业 : 推销员 、 政治家 、 企业家 。
+		</div>
+	</div>
+	<div class="C box">
+		<span class="Csp">C---传统型</span>
+		<div class="Ccontent words">
+		<center>人格倾向:</center><br>
+		具有顺从、谨慎、保守、自控、服从、规律、坚毅、实际稳重、有效率、但缺乏想象力等特征，表现为 :<br><br>
+		1、喜欢传统性质的的职业或环境，避免艺术性质的职业或情境，会以传统的能力解决工作或其他方面的问题 。<br><br>
+		2、喜欢顺从、规律、有文书与数字能力，并重视商业与经济上的成就。<br><br>
+		典型职业:出纳、会计、秘书 。
+		</div>
+	</div>
+	<script src="js/jquery-1.12.3.min.js"></script>
+	
+	<script>
+		$(function(){
+			$(".Rsp").click(function(){
+				$(".words").slideUp();
+				$("span").show();
+				$(".Rsp").hide(200);
+				$(".Rcontent").slideDown(500);
+			});
+			$(".Isp").click(function(){
+				$(".words").slideUp();
+				$("span").show();
+				$(".Isp").hide(200);
+				$(".Icontent").slideDown(500);
+			});
+			$(".Asp").click(function(){
+				$(".words").slideUp();
+				$("span").show();
+				$(".Asp").hide(200);
+				$(".Acontent").slideDown(500);
+			});
+			$(".Ssp").click(function(){
+				$(".words").slideUp();
+				$("span").show();
+				$(".Ssp").hide(200);
+				$(".Scontent").slideDown(500);
+			});
+			$(".Esp").click(function(){
+				$(".words").slideUp();
+				$("span").show();
+				$(".Esp").hide(200);
+				$(".Econtent").slideDown(500);
+			});
+			$(".Csp").click(function(){
+				$(".words").slideUp();
+				$("span").show();
+				$(".Csp").hide(200);
+				$(".Ccontent").slideDown(500);
+			});
+		})
+	</script>
+	
+	</body>
+</html>

@@ -1,0 +1,58 @@
+{
+  "index.html": {
+    "href": "index.html",
+    "resources": [
+      "img/bg4.jpg",
+      "img/persons.jpg",
+      "img/analyses.jpg",
+      "img/math.jpg",
+      "img/chitu.png"
+    ],
+    "refer": [
+      "tests.html",
+      "begin.html",
+      "analyse.html",
+      "core.html",
+      "about.html"
+    ],
+    "priority": 0
+  },
+  "begin.html": {
+    "resources": [
+      "css/‰S.ttc"
+    ],
+    "refer": [
+      "tests.html"
+    ]
+  },
+  "tests.html": {
+    "resources": [
+      "css/‰S.ttc"
+    ],
+    "refer": [
+      "result.html",
+      "begin.html"
+    ]
+  },
+  "result.html": {
+    "resources": [
+      "css/‰S.ttc",
+      "tests.html"
+    ],
+    "refer": [
+      "result.html",
+      "tests.html"
+    ]
+  },
+  "core.html": {
+    "resources": [
+      "css/‰S.ttc"
+    ]
+  },
+  "about.html": {
+    "resources": [
+      "css/‰S.ttc",
+      "img/Ñ=.png"
+    ]
+  }
+}

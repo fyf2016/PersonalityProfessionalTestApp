@@ -1,0 +1,49 @@
+*{
+			margin:0;
+			padding: 0;
+		}
+		@font-face{
+			font-family: cute;
+			src: url("../css/luoli.ttc");
+		}
+		#box{
+			margin: 0 auto;
+			width: 100%;
+			min-height: 670px;
+			overflow: hidden;
+			background: url("../img/testbg2.png") no-repeat;
+			background-size: 100% 100%;
+		}
+		h1{
+			font-size: 33px;
+			color: #442e02;
+			font-family: "微雅软黑";
+			margin: 170px 0 43px 0;
+		}
+		.questions{
+			width: 100%;
+			margin: 0 auto;
+			font-family: cute;
+		}
+		span{
+			display: block;
+			float: left;
+			font-size: 25px;
+			color: #2d1e01;
+			letter-spacing: 7px;
+			margin-left: 20px;
+		}
+		.start{
+			clear: both;
+			width: 62px;
+			height: 45px;
+			color: black;
+			font-family: cute;
+			letter-spacing: 2px;
+			margin-top: 265px;
+			font-size: 28px;
+			display: block;
+			text-decoration: none;
+
+		}
+	

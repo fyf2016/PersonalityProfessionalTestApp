@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta name="description" content="">
+	    <meta name="author" content="">
+		<title>关于赤兔</title>
+		<style>
+			/**{
+				margin: 0;
+				padding:0;
+			}*/
+			body{
+				margin: 0;
+				padding:0;
+			}
+			/*div{
+				margin-left: 5px;
+			}*/
+			
+			@font-face{
+				font-family: ink;
+				src: url("css/萝莉体.ttc");
+			}
+			.rabbit{
+				min-height:231px;
+				height: 100%;
+				overflow: hidden;
+				font-family: ink;
+				font-size: 35px;
+				padding-top: 100px;
+				background: url("img/ink.jpg") no-repeat;
+				background-size: 100% 100%;
+			}
+			.team{
+				min-height:336px;
+				height: 100%;
+				overflow: hidden;
+				background:#F5F5F5 url("img/dog.jpg") no-repeat;
+				background-size: 100% 100%;
+				font-size: 24px;
+			}
+			p{
+				margin-left: 10px;
+			}
+			.two{
+				
+				font-family: ink;
+				font-size: 25px;
+				line-height: 42px;
+			}
+
+	</style>
+	</head>
+	<body>
+		<div class="rabbit">
+		<p class="big"></p>
+		<!-- <p class="work"></p> -->
+	</div>
+	<div class="team">
+		<!-- <p class="one">做专业的订餐系统---赤兔点餐系统</p> -->
+		<p class="two">
+			<!-- 你还在为吃不到美食而苦恼吗 ? 你还在因为餐厅拥挤而等不到餐吗 ?  <br>
+			不要慌!<img src="images/滑稽.png"> 有我们在 ! 为了应对此种情况,我们团队推出了全新的点餐模式 , 只要用微信扫描对应位置的二维码,即可快速点餐, 方便快捷 , 帮您远离拥挤的烦恼 !<br> -->
+		</p>
+	</div>
+	<script src="js/jquery-1.12.3.min.js"></script>
+	<script src="js/public.js"></script>
+	<script>
+		var message="你还在为不了解自己而感到苦恼吗 ? 你还在因为找不到适合的职业而叹气吗 ? <br>不要慌!<img src='img/huaji.png'> 有我们在 ! 为了应对此种情况,我们团队推出了强大的性格职业测试app, 只要完成测试题,即可帮您分析您的性格并推荐适合您的职业, 方便快捷 , 帮您远离烦恼 !<br>";
+		$(function(){
+			var n=0;
+			var str="";
+			var eat="";
+			var help="";
+			var s;
+			var h;
+			function big(){
+				var text="兔之大 , 一锅炖不下 !";
+				str+=text.charAt(n);
+				n++;
+				$(".big").html(str);
+				if (n>text.length) {
+					clearInterval(t);
+					$(".big").html("");
+					n=0;
+					s=setInterval(work,350);
+				}
+			}
+			var t=setInterval(big,350);
+			function work(){
+				var text="我们是做什么的 ? (不是用来吃的 ! ! ! )";
+				eat+=text.charAt(n);
+				n++;
+				$(".big").html(eat);
+				if (n>text.length) {
+					clearInterval(s);
+					$(".big").html("");
+					n=0;
+					h=setInterval(helps,350);
+				}
+			}
+			function helps(){
+				var text="做最优秀的自己---赤兔";
+				help+=text.charAt(n);
+				n++;
+				$(".big").html(help);
+				if (n>text.length) {
+					clearInterval(h);
+					$(".two").html(message);//问题出错
+				}
+
+			}
+			
+		})
+	</script>
+	</body>
+</html>
